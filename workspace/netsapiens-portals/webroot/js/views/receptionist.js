@@ -115,21 +115,28 @@ var main = (function () {
     // Print user table in the main page
     print = function(data){
       var rows = "";
+      var check = "";
       for(var i = 0; i < data.length; i++){
+        if(data[i].group.length > 11){
+          check = "<span title='" + data[i].group +"'>" + (data[i].group).substring(0, 7) + "... </span>" ;
+        }
+        else{
+          check = "<span> " + data[i].group + "</span>";
+        }
         if(data[i].presence == "open"){
             rows = "<div class = 'text'>" +
                    "<span class='glyphicon " + data[i].user + " glyphicon-ok-circle' aria-hidden='true'></span>" +
-                   "<p><span class='table-name'>" + data[i].first_name + " " + data[i].last_name + "</span></p>" +
-                   "<p> " + data[i].user + "</p>" +
-                   "<p> " + data[i].group + "</p>" +  
+                   "<span class='table-name'>" + data[i].first_name + " " + data[i].last_name + "</span>" +
+                   "<span> " + data[i].user + "</span>" +
+                   check +  
                  "</div>";
         }
         else if(data[i].presence == "inuse" || data[i].presence == "alerting" || data[i].presence == "progressing" || data[i].presence == "held") {
           rows = "<div class = 'text'>" +
                  "<span class='glyphicon " + data[i].user + " glyphicon-remove-circle' aria-hidden='true'></span>" +
-                 "<p><span class='table-name'>" + data[i].first_name + " " + data[i].last_name + "</span></p>" +
-                 "<p> " + data[i].user + "</p>" +
-                 "<p> " + data[i].group + "</p>" +  
+                 "<span class='table-name'>" + data[i].first_name + " " + data[i].last_name + "</span>" +
+                 "<span> " + data[i].user + "</span>" +
+                 check +  
                "</div>";
         }
         else{
@@ -163,9 +170,9 @@ var main = (function () {
         if(document.getElementsByClassName("checker")[i].checked){
           rows = "<div class='text'>" +
                "<span class= '" + $("." + table[i].cells[1].textContent).attr("class") + " 'aria-hidden='true'></span>" +
-                 "<p><span class='table-name'>" + table[i].cells[0].textContent + "</span></p>" +
-               "<p>" + table[i].cells[1].textContent + "</p>" +
-               "<p>" + table[i].cells[2].textContent +"</p>" +
+                 "<span class='table-name'>" + table[i].cells[0].textContent + "</span>" +
+               "<span>" + table[i].cells[1].textContent + "</span>" +
+               "<span>" + table[i].cells[2].textContent +"</span>" +
                  "</div>";
           $(rows).appendTo('#contact_' + name);
         }
