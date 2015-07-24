@@ -1,0 +1,235 @@
+h1{
+	color: red;
+}
+
+
+body {
+  background-color: white;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+p {
+  margin: 0;
+}
+
+.row {
+  margin: 0;
+}
+
+
+.panel-body1{
+  position: relative;
+  max-height: 500px;
+  overflow-y: scroll;
+}
+
+.panel-body2{
+  max-height: 500px;
+  overflow-y: scroll;
+}
+
+.panel-body3{
+  max-height: 500px;
+  overflow-y: scroll;
+}
+
+.rowIcon1{
+  position: relative;
+  float: right;
+}
+
+.panel-groupCustom{
+  width: 330px;
+  height: 100px;
+}
+
+.panel-group{
+  width: 350px;
+}
+
+
+@import url('http://getbootstrap.com/2.3.2/assets/css/bootstrap.css');
+
+.container {
+  margin-top: 10px;
+}
+
+
+<style>
+/* Prevent the text contents of draggable elements from being selectable. */
+[draggable] {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  /* Required to make elements draggable in old WebKit */
+  -khtml-user-drag: element;
+  -webkit-user-drag: element;
+}
+
+#callElem{
+  background-color: white;
+  height: 115px;
+  width: 275px;
+  border: 2px;
+  border-radius: 10px;
+  padding:8px;
+  box-shadow: inset 0 0 3px #000;
+  float:right;
+  margin-top: 5px;
+}
+
+.dots{
+  font-size: 18px;
+  float: left;
+}
+
+.content{
+  position: absolute;
+  margin-left: 15px;
+  float: left;
+}
+
+.varExt{
+  font-size: 14px;
+  
+}
+
+.varName{
+  font-size: 17px;
+  float:left;
+}
+
+.phonePic{
+  font-size: 60px;
+  margin-bottom: -25px;
+  color: grey;
+  position: absolute;
+  left: 170px;
+}
+
+.varNumber{
+  font-size: 17px;
+  margin-top: -20px;
+}
+
+.buttons{
+  float: left;
+}
+
+.hold{
+  font-size: 15px;
+  padding-top: 1px;
+  height: 25px;
+  width: 120px;
+  position:relative;
+  bottom: 0px;
+  left: 0px;
+}
+
+.park{
+  font-size: 15px;
+  padding-top: 1px;
+  height: 25px;
+  width: 120px;
+  position:relative;
+  bottom: 24px;
+  right: -122px;
+}
+
+
+
+#callElem3{
+  height: 95px;
+  width: 275px;
+  border: 2px;
+  padding-left:3px;
+  padding-top: 2px;
+  box-shadow: inset 0 0 3px #000;
+  float:left;
+  margin-bottom: 10px;
+}
+
+.custom{
+  border: 2px;
+  border-radius: 2px;
+  overflow-y: scroll;
+  height: 800px;
+  max-height: 800px;
+  width: 300px;
+  position: relative;
+  float: right;
+  border-color: black;
+  box-shadow: inset 0 0 3px #000;
+}
+
+.incomingHeader{
+  position: relative;
+  padding-left: 13px;
+  font-size: 18px;
+}
+
+.parkDots{
+  font-size: 15px;
+  padding-top: 3px;
+  float: left;
+}
+
+.varName3{
+  font-size: 20px;
+  float:left;
+  margin-right: 5px;
+}
+
+.varNumber3{
+  font-size: 15px;
+  position:relative;
+  right: 0px;
+  top: 3px;
+}
+
+.parkTime{
+  float:left;
+  margin-right: 25px;
+  font-size: 25px;
+}
+
+
+.parkBy{
+  float:left;
+  margin-right:10px;
+}
+
+.parkName{
+  font-size: 18px;
+}
+
+.parkSel{
+  font-size: 18px;
+}
+
+.pIcon{
+  height: 65px;
+  width: 65px;
+  border: 2px;
+  border-radius: 65px;
+  padding:8px;
+  padding-left: 12px;
+  box-shadow: inset 0 0 30px #000;
+  float: left;
+  position: relative;
+  right: -8px;
+  top: -20px;
+}
+
+.iconNum{
+  position: relative;
+  text-align: center;
+  right: 2px;
+  font-size: 35px;
+}
+
+</style>
